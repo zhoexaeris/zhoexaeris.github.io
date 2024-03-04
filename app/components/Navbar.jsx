@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <div classname="flex-1 bg-pink-200">
             <ul className='flex'>
-                <li className='px-4 text-sm'><Link href={"#Works"}>Works</Link></li>
+                <li className='px-4 text-sm'><Link href={"#Projects"}>Projects</Link></li>
                 <li className='px-4 text-sm'><Link href={"#About"}>About</Link></li>
                 <li className='px-4 text-sm'><Link href={"#Resume"}>Resume</Link></li>
             </ul>
