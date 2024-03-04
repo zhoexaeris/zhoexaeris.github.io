@@ -1,22 +1,22 @@
 import React from 'react'
 
-function ProjectCard({imgUrl, title, description}) {
+function ProjectCard({imgUrl, title, description, background, tags, tagcolor, text}) {
   return (
-    <div className='card bg-yellow shadow-3xl'>
+    <div className={`card bg-${background} shadow-3xl m-5`}>
       <div className='flex'>
         <div className="left flex-initial w-96 px-4">
             <div className="px-4 py-4">
-                <img src={"images/mockup-pasahero.png"}/>
+                <img src={imgUrl}/>
             </div>
         </div>
         <div className="right flex-1 grid px-4 py-4 place-content-end text-right">
-            <div className="title text-4xl font-bold">Pasahero</div>
-            <div className="description text-justify text-sm py-2">An app that redefines Metro Manila’s commuting experience, making daily journeys stress-free and efficient.</div>
+            <div className="title text-4xl font-bold">{title}</div>
+            <div className="description text-justify text-sm py-2">{description}</div>
             <div className="tags grid place-content-end">
                 <ul className='flex'>
-                    <li className='badge bg-dark-yellow border-0 text-text-yellow mx-1'>tag 1 </li>
-                    <li className='badge bg-dark-yellow border-0 text-text-yellow mx-1'>tag 2 </li>
-                    <li className='badge bg-dark-yellow border-0 text-text-yellow mx-1'>tag 3</li>
+                    {tags.map((tag, index) => (
+                        <li key={index} className={`badge bg-${tagcolor} border-0 text-${text} mx-1 font-sm`}>{tag}</li>
+                    ))}
                 </ul>
             </div>
         </div>
