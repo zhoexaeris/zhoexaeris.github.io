@@ -15,6 +15,7 @@ function ProjectCard({imgUrl, title, description, background, tags, tagcolor, te
             <div className="tags grid place-content-end">
                 <ul className='flex'>
                     {tags.map((tag, index) => (
+                        // TODO: fix background color and text color
                         <li key={index} className={`badge bg-${tagcolor} border-0 text-${text} mx-1 font-sm`}>{tag}</li>
                     ))}
                 </ul>

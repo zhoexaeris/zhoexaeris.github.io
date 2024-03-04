@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar }  from '@fortawesome/free-regular-svg-icons';
 
 const Navbar = () => {
-    // icons
     const starIcon = <FontAwesomeIcon icon={faStar} className="w-5 h-5"/>
 
   return (

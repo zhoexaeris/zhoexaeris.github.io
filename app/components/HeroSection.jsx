@@ -26,6 +26,7 @@ const Tagline = () => {
 
 const HeroSection = () => {
   return (
+    // TODO: make the height longer
     <section className='text-black bg-light-green h-96 px-4'>
         <div className='flex h-full items-center justify-center px-4'>
             <div className='flex-row'>
