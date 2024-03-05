@@ -7,7 +7,7 @@ export default function Home() {
   return (
     // TODO: make it all responsive
     <main className="flex min-h-screen flex-col bg-white mx-auto text-black">
-      <Navbar />
+      <Navbar color="light-green"/>
       <HeroSection />
       <Projects />
     </main>

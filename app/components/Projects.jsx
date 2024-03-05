@@ -8,9 +8,9 @@ const projectsData = [
         description: "An app that redefines Metro Manila’s commuting experience, making daily journeys stress-free and efficient.",
         image: "images/mockup-pasahero.png",
         background: "yellow",
-        tags: ["Responsive Design", "Transportation", "UI/UX Study"],
+        tags: ["Prototyping", "Transportation", "UI/UX"],
         tagcolor: "dark-yellow",
-        text: "text-yellow"
+        text: "text-yellow",
     }, 
     {
         id: 2,
@@ -20,7 +20,7 @@ const projectsData = [
         background: "blue",
         tags: ["Front-end", "Healthcare", "UI Design"],
         tagcolor: "dark-blue",
-        text: "text-blue"
+        text: "text-blue",
     }, 
     {
         id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
         background: "red",
         tags: ["Full-stack", "Gaming"],
         tagcolor: "dark-red",
-        text: "text-red"
+        text: "text-red",
     },
 ]
 
@@ -38,7 +38,7 @@ function Projects() {
   return (
     <section>
         <div className='flex h-full bg-beige-white items-center justify-center px-20'>
-            <div className='flex-row max-w-2xl py-5'>
+            <div className='flex-row max-w-3xl py-5'>
                 {projectsData.map((project) => (
                     <ProjectCard
                         key={project.id}
@@ -47,6 +47,8 @@ function Projects() {
                         imgUrl={project.image}
                         background={project.background}
                         tags={project.tags}
+                        tagcolor={project.tagcolor}
+                        text={project.text}
                     />
                 ))}
             </div>

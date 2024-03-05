@@ -7,11 +7,7 @@ const Tagline = () => {
         <span className='text-3xl font-medium'>
         <TypeAnimation
       sequence={[
-        'UI/UX designer',
-        200,
-        'Front-end developer',
-        200,
-        'Dog lover', 
+        'An aspiring UI/UX designer, front-end web developer, and a dog lover.',
         200,
         () => {
           console.log('Sequence completed');
