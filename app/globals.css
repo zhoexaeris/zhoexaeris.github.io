@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.quicksand {
+  font-family: var(--font-quicksand);
+}
+
+.source-sans-3 {
+  font-family: var(--font-source-sans-3);
+}

@@ -30,10 +30,10 @@ const HeroSection = () => {
     <section className='text-black bg-light-green h-96 px-4'>
         <div className='flex h-full items-center justify-center px-4'>
             <div className='flex-row'>
-            <h1 className='text-6xl font-extrabold'>
+            <h1 className='text-6xl font-extrabold quicksand'>
                 Hi, I am Zhoe Aeris.
             </h1>
-            <p className='text-3xl font-medium'> 
+            <p className='text-3xl font-medium source-sans-3'> 
                 <Tagline />
             </p>
             </div>

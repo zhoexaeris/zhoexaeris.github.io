@@ -13,7 +13,7 @@ function ProjectCard({imgUrl, title, description, background, tags, tagcolor, te
             <div className="title text-4xl font-bold">{title}</div>
             <div className="description text-justify text-sm py-2">{description}</div>
             <div className="tags grid place-content-end">
-                <ul className='flex'>
+                <ul className='flex flex-wrap'>
                     {tags.map((tag, index) => (
                         // TODO: fix background color and text color
                         <li key={index} className={`badge bg-${tagcolor} border-0 text-${text} mx-1 font-sm`}>{tag}</li>
